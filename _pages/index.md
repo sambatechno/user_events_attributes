@@ -189,5 +189,5 @@ For questions about user attributes or data access:
 
 ---
 
-**Last Updated**: January 2024  
+**Last Updated**: August 12, 2025  
 **Data Source**: CATA Customer Data Platform

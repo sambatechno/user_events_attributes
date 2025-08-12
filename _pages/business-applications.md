@@ -144,3 +144,8 @@ Our system automatically updates these attributes:
 - **Hourly updates**: Purchase behavior and user registration
 - **Daily sync**: Marketing campaign data and segmentation
 - **Real-time availability**: Data available for immediate use after processing
+
+---
+
+**Last Updated**: August 12, 2025  
+**Data Source**: CATA Customer Data Platform

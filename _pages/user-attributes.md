@@ -104,3 +104,8 @@ Our system automatically updates these attributes:
 - **Campaign Data**: Marketing platform synchronization
 - **Customer Segmentation**: Updated segment data
 - **Campaign Performance**: Marketing analytics updates
+
+---
+
+**Last Updated**: August 12, 2025  
+**Data Source**: CATA Customer Data Platform

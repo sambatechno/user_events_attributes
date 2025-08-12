@@ -113,3 +113,8 @@ permalink: /data-privacy.html
 - Regular privacy training for staff
 - Security awareness programs
 - Compliance education sessions
+
+---
+
+**Last Updated**: August 12, 2025  
+**Data Source**: CATA Customer Data Platform
