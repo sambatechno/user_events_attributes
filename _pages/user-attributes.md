@@ -1,10 +1,10 @@
-# CATA User Attributes Documentation
+---
+layout: page
+title: User Attributes Reference
+permalink: /user-attributes.html
+---
 
-Welcome to the CATA User Attributes documentation. This document provides a comprehensive overview of all user attributes tracked in our customer data platform.
-
-## 👥 User Attributes Overview
-
-Our system tracks comprehensive user attributes to provide insights into customer behavior, loyalty, and engagement. These attributes help us understand our customers better and provide personalized experiences.
+# User Attributes Reference
 
 ## 📊 Complete User Attributes List
 
@@ -72,34 +72,6 @@ The following table lists all user attributes available in our system:
 - **App Language**: Localization preferences
 - **Store Locations**: Shopping patterns
 
-## 📈 Business Applications
-
-### Customer Segmentation
-Use these attributes to segment customers by:
-- **Value**: High, medium, low spenders
-- **Engagement**: Active, inactive, churned
-- **Loyalty**: Tier levels and point balances
-- **Preferences**: Product categories, stores, payment methods
-
-### Marketing Campaigns
-Target customers based on:
-- **Purchase History**: Recent buyers, high-value customers
-- **Loyalty Status**: Tier-specific promotions
-- **Geographic**: Store-based campaigns
-- **Behavioral**: Category preferences
-
-### Customer Retention
-Identify at-risk customers through:
-- **Inactivity**: Time since last order
-- **Tier Expiration**: Approaching downgrades
-- **Point Balance**: Low engagement indicators
-
-### Product Development
-Understand customer needs via:
-- **Category Preferences**: Popular product types
-- **Store Patterns**: Shopping behavior
-- **Payment Methods**: Transaction preferences
-
 ## 🔄 Data Updates
 
 Our system automatically updates these attributes:
@@ -107,37 +79,3 @@ Our system automatically updates these attributes:
 - **Daily**: Loyalty tier calculations
 - **Weekly**: Purchase pattern analysis
 - **Monthly**: Customer segmentation updates
-
-## 📊 Reporting & Analytics
-
-### Standard Reports Available
-- Customer lifetime value analysis
-- Loyalty program performance
-- Store performance comparison
-- Product category trends
-- Customer acquisition and retention
-
-### Custom Analytics
-- Segment-specific insights
-- Campaign performance tracking
-- Predictive customer behavior
-- Revenue forecasting
-
-## 🔒 Data Privacy & Security
-
-- All personal identifiable information is anonymized
-- Data access is restricted to authorized personnel
-- Regular security audits and compliance checks
-- Data retention policies ensure proper lifecycle management
-
-## 📞 Support & Questions
-
-For questions about user attributes or data access:
-- **Email**: support@trycata.com
-- **Documentation**: This page and related guides
-- **Technical Support**: Contact your system administrator
-
----
-
-**Last Updated**: January 2024  
-**Data Source**: CATA Customer Data Platform

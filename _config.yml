@@ -1,0 +1,88 @@
+# GitHub Pages Configuration
+# This file configures how your documentation will be displayed on GitHub Pages
+
+# Site settings
+title: CATA User Attributes
+description: Comprehensive documentation for CATA user attributes and data processing pipeline
+author: CATA Team
+email: support@trycata.com
+
+# Repository settings
+repository: user_events_attributes
+repository_url: https://github.com/aliirawan/user_events_attributes
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Theme settings
+theme: jekyll-theme-cayman
+# Alternative themes you can use:
+# theme: jekyll-theme-minimal
+# theme: jekyll-theme-slate
+# theme: jekyll-theme-tactile
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: User Attributes
+    url: /user-attributes.html
+  - title: Business Applications
+    url: /business-applications.html
+  - title: Data Privacy
+    url: /data-privacy.html
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "CATA Team"
+
+# Footer
+footer:
+  links:
+    - title: GitHub
+      url: https://github.com/aliirawan/user_events_attributes
+    - title: Issues
+      url: https://github.com/aliirawan/user_events_attributes/issues
+    - title: Support
+      url: mailto:support@trycata.com
+
+# Custom CSS
+custom_css:
+  - assets/css/custom.css
+
+# Custom JavaScript
+custom_js:
+  - assets/js/custom.js

@@ -1,3 +1,9 @@
+---
+layout: page
+title: CATA User Attributes Documentation
+permalink: /
+---
+
 # CATA User Attributes Documentation
 
 Welcome to the CATA User Attributes documentation. This document provides a comprehensive overview of all user attributes tracked in our customer data platform.
