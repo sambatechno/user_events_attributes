@@ -16,12 +16,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# Theme settings
-theme: jekyll-theme-cayman
-# Alternative themes you can use:
-# theme: jekyll-theme-minimal
-# theme: jekyll-theme-slate
-# theme: jekyll-theme-tactile
+# Layout settings
+layout: default
 
 # Navigation
 nav:
