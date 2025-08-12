@@ -25,6 +25,11 @@
     width: 100%;
     margin: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    list-style: none;
+}
+
+.main-content table * {
+    list-style: none !important;
 }
 
 .main-content table th {
@@ -47,6 +52,17 @@
 
 .main-content table tr:hover {
     background-color: #f1f3f4;
+}
+
+/* Ensure no checkbox-like elements in tables */
+.main-content table input[type="checkbox"],
+.main-content table input[type="radio"] {
+    display: none !important;
+}
+
+.main-content table::before,
+.main-content table::after {
+    content: none !important;
 }
 
 /* Code block styling */
