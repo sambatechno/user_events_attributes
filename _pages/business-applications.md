@@ -110,7 +110,37 @@ Understand customer needs via:
 
 Our system automatically updates these attributes:
 
-- **Real-time**: Point balances, order information
-- **Daily**: Loyalty tier calculations
-- **Weekly**: Purchase pattern analysis
-- **Monthly**: Customer segmentation updates
+### **Loyalty Program Updates** - Every 30 minutes
+- **Point Balance**: Current available loyalty points
+- **Points Earned**: Lifetime points accumulated  
+- **Points Redeemed**: Voucher and order redemptions
+- **Loyalty Tier**: Current membership level
+- **Tier Expiration**: Tier expiration dates
+
+### **Order Processing** - Every hour
+- **First Order**: Customer acquisition tracking
+- **Last Order**: Most recent purchase updates
+- **Total Spend**: Lifetime value calculations
+- **Total Purchase**: Purchase frequency updates
+- **Category Purchased**: Product category preferences
+- **Product Purchased**: Specific product preferences
+- **Last Store Code**: Store of last purchase
+- **Most Store Code**: Most visited store analysis
+- **Last Payment Method**: Payment method preferences
+
+### **Registration Processing** - Every hour
+- **Registration Date**: New user onboarding
+- **Internal ID**: User identification setup
+- **External ID**: Third-party system integration
+- **App Language**: Localization preferences
+
+### **Marketing Data Sync** - Daily at 2:00 AM
+- **Campaign Data**: Marketing platform synchronization
+- **Customer Segmentation**: Updated segment data
+- **Campaign Performance**: Marketing analytics updates
+
+### **Business Impact Timeline**
+- **30-minute updates**: Loyalty points and tier changes
+- **Hourly updates**: Purchase behavior and user registration
+- **Daily sync**: Marketing campaign data and segmentation
+- **Real-time availability**: Data available for immediate use after processing
