@@ -65,6 +65,31 @@
     content: none !important;
 }
 
+/* Remove any list-style elements in table cells */
+.main-content table td,
+.main-content table th {
+    list-style: none !important;
+}
+
+.main-content table td::before,
+.main-content table td::after,
+.main-content table th::before,
+.main-content table th::after {
+    content: none !important;
+}
+
+/* Remove any pseudo-elements that might look like checkboxes */
+.main-content table *::before,
+.main-content table *::after {
+    content: none !important;
+}
+
+/* Ensure no background images that might look like checkboxes */
+.main-content table td,
+.main-content table th {
+    background-image: none !important;
+}
+
 /* Code block styling */
 .main-content code {
     background-color: #f6f8fa;
