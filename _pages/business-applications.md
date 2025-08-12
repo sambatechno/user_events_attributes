@@ -108,16 +108,16 @@ Understand customer needs via:
 
 ## 🔄 Data Update Frequency
 
-Our system automatically updates these attributes:
+Our system automatically updates all user attributes daily at 2:00 AM:
 
-### **Loyalty Program Updates** - Every 30 minutes
+### **Loyalty Program Attributes**
 - **Point Balance**: Current available loyalty points
 - **Points Earned**: Lifetime points accumulated  
 - **Points Redeemed**: Voucher and order redemptions
 - **Loyalty Tier**: Current membership level
 - **Tier Expiration**: Tier expiration dates
 
-### **Order Processing** - Every hour
+### **Order Processing Attributes**
 - **First Order**: Customer acquisition tracking
 - **Last Order**: Most recent purchase updates
 - **Total Spend**: Lifetime value calculations
@@ -128,22 +128,22 @@ Our system automatically updates these attributes:
 - **Most Store Code**: Most visited store analysis
 - **Last Payment Method**: Payment method preferences
 
-### **Registration Processing** - Every hour
+### **Registration Attributes**
 - **Registration Date**: New user onboarding
 - **Internal ID**: User identification setup
 - **External ID**: Third-party system integration
 - **App Language**: Localization preferences
 
-### **Marketing Data Sync** - Daily at 2:00 AM
+### **Marketing Integration**
 - **Campaign Data**: Marketing platform synchronization
 - **Customer Segmentation**: Updated segment data
 - **Campaign Performance**: Marketing analytics updates
 
 ### **Business Impact Timeline**
-- **30-minute updates**: Loyalty points and tier changes
-- **Hourly updates**: Purchase behavior and user registration
-- **Daily sync**: Marketing campaign data and segmentation
-- **Real-time availability**: Data available for immediate use after processing
+- **Daily refresh**: All user attributes updated at 2:00 AM
+- **Marketing campaigns**: Daily refreshed data for targeting
+- **Business decisions**: Data available daily for analysis
+- **External systems**: Synchronized daily for consistency
 
 ---
 

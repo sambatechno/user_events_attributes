@@ -74,16 +74,16 @@ The following table lists all user attributes available in our system:
 
 ## 🔄 Data Updates
 
-Our system automatically updates these attributes:
+Our system automatically updates these attributes daily at 2:00 AM:
 
-### **Loyalty Program Updates** - Every 30 minutes
+### **Loyalty Program Attributes**
 - **Point Balance**: Current available loyalty points
 - **Points Earned**: Lifetime points accumulated  
 - **Points Redeemed**: Voucher and order redemptions
 - **Loyalty Tier**: Current membership level
 - **Tier Expiration**: Tier expiration dates
 
-### **Order Processing** - Every hour
+### **Order Processing Attributes**
 - **First Order**: Customer acquisition tracking
 - **Last Order**: Most recent purchase updates
 - **Total Spend**: Lifetime value calculations
@@ -94,13 +94,13 @@ Our system automatically updates these attributes:
 - **Most Store Code**: Most visited store analysis
 - **Last Payment Method**: Payment method preferences
 
-### **Registration Processing** - Every hour
+### **Registration Attributes**
 - **Registration Date**: New user onboarding
 - **Internal ID**: User identification setup
 - **External ID**: Third-party system integration
 - **App Language**: Localization preferences
 
-### **Marketing Data Sync** - Daily at 2:00 AM
+### **Marketing Integration**
 - **Campaign Data**: Marketing platform synchronization
 - **Customer Segmentation**: Updated segment data
 - **Campaign Performance**: Marketing analytics updates
