@@ -90,6 +90,75 @@
     background-image: none !important;
 }
 
+/* Additional rules to remove any checkbox-like elements */
+.main-content table {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.main-content table td,
+.main-content table th {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+/* Remove any default browser styling that might create checkboxes */
+.main-content table input,
+.main-content table select,
+.main-content table textarea {
+    display: none !important;
+}
+
+/* Ensure no list markers or bullets */
+.main-content table ul,
+.main-content table ol {
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+.main-content table li {
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+/* Remove any potential checkbox characters or symbols */
+.main-content table td:empty::before,
+.main-content table th:empty::before {
+    content: none !important;
+}
+
+/* Force remove any checkbox-like styling */
+.main-content table * {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+/* Remove any checkbox Unicode characters */
+.main-content table td:contains("☐"),
+.main-content table td:contains("☑"),
+.main-content table td:contains("☒"),
+.main-content table td:contains("✓"),
+.main-content table td:contains("✔"),
+.main-content table td:contains("✗"),
+.main-content table td:contains("✘") {
+    content: "" !important;
+}
+
+/* Additional specificity for table content */
+.main-content table td,
+.main-content table th {
+    position: relative !important;
+}
+
+.main-content table td::marker,
+.main-content table th::marker {
+    content: none !important;
+}
+
 /* Code block styling */
 .main-content code {
     background-color: #f6f8fa;
