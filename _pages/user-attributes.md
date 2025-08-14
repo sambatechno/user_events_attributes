@@ -6,45 +6,9 @@ permalink: /user-attributes.html
 
 # User Attributes Reference
 
-## 📊 Complete User Attributes List
+This page provides a detailed reference for user attributes. For the complete and up-to-date list of all user attributes, please refer to the [main documentation](index.html).
 
-The following table lists all user attributes available in our system:
-
-> **Note**: Planned attributes are listed in a separate section at the bottom and are not yet implemented in the current system.
-
-| Attribute | Type | Description | Business Use |
-|-----------|------|-------------|--------------|
-| `id` | Auto-increment | Unique system identifier | Internal tracking |
-| `internal_id` | Text (50 chars) | App customer unique ID | User identification |
-| `external_id` | Text (50 chars) | External system user ID (currently not supported) | Third-party integration |
-| `registration_at` | Date & Time | When user registered | User lifecycle analysis |
-| `app_language` | Text (10 chars) | User's preferred language (coming soon) | Localization & UX |
-| `point_balance` | Number | Last current balance known (not real time) | Loyalty program management |
-| `point_earned` | Number | Total points earned (lifetime) | Loyalty program analytics |
-| `point_voucher_redeemed` | Number | Points used for vouchers (lifetime) | Redemption tracking |
-| `point_order_redeemed` | Number | Points used for orders (lifetime) | Redemption tracking |
-| `first_order_at` | Date & Time | User's first purchase | Customer acquisition |
-| `last_order_at` | Date & Time | Most recent purchase | Customer engagement |
-| `total_spend` | Decimal | Total amount spent | Revenue analysis |
-| `total_purchase` | Number | Total number of purchases | Purchase frequency |
-| `category_purchased` | Text (200 chars) | Product categories bought | Product preferences |
-| `product_purchased` | Text (200 chars) | Specific products bought | Product preferences |
-| `last_store_code` | Text (200 chars) | Store of last purchase | Store performance |
-| `most_store_code` | Text (200 chars) | Most visited store | Store preferences |
-| `last_payment_method` | Text (200 chars) | Payment method used | Payment preferences |
-| `tier_name` | Text (30 chars) | Last known tier name (e.g. Bronze, Silver, Gold) | Loyalty program status |
-| `tier_end_date` | Date | Last known tier membership end | Loyalty program management |
-| `created_at` | Timestamp | Record creation time | Data tracking |
-| `updated_at` | Timestamp | Last update time | Data freshness |
-
-### Planned Attributes (Not Yet Implemented)
-
-| Attribute | Type | Description | Business Use |
-|-----------|------|-------------|--------------|
-| `last_payment_card_brand` | Text (10 chars) | Card brand (visa, mc, amex, etc.) | Payment analytics |
-| `is_account_deleted` | Boolean | Account deletion status | Data privacy compliance |
-
-## 🎯 Key Attribute Categories
+## 📊 Attribute Categories Overview
 
 ### Customer Identification
 - **Internal ID**: App customer unique identifier
@@ -75,6 +39,10 @@ The following table lists all user attributes available in our system:
 
 Our system automatically updates these attributes:
 - **Daily**: All attributes (order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation)
+
+## 📖 Complete Documentation
+
+For the complete list of all user attributes with detailed descriptions, types, and business use cases, please visit the [main documentation page](index.html).
 
 ---
 

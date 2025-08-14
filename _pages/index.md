@@ -40,15 +40,19 @@ The following table lists all user attributes available in our system:
 | `last_payment_method` | Text (200 chars) | Payment method used | Payment preferences |
 | `tier_name` | Text (30 chars) | Last known tier name (e.g. Bronze, Silver, Gold) | Loyalty program status |
 | `tier_end_date` | Date | Last known tier membership end | Loyalty program management |
+| `first_name` / `firstname` | Text (100 chars) | Customer's first name | Personal identification |
+| `last_name` / `lastname` | Text (100 chars) | Customer's last name | Personal identification |
+| `phone_number` | Text (20 chars) | Customer's mobile number | Contact information |
+| `email_verified_at` | Date & Time | When user email was verified | Account verification status |
+| `customer_deleted_at` | Date & Time | When user account was deleted | Data privacy compliance |
+| `orders_count_30d` | Integer | Number of orders in last 30 days | Recent engagement tracking |
+| `orders_count_90d` | Integer | Number of orders in last 90 days | Medium-term engagement |
+| `avg_orders_value_90d` | Decimal (money) | Average order value in last 90 days | Customer value analysis |
+| `avg_items_per_order_90d` | Decimal | Average items per order in last 90 days | Purchase behavior analysis |
+| `pmix_top_categories_90d` | Text | Top categories in last 90 days | Product mix analysis |
+| `top_items_90d` | Text | Top most ordered items in last 90 days | Product preference analysis |
 | `created_at` | Timestamp | Record creation time | Data tracking |
 | `updated_at` | Timestamp | Last update time | Data freshness |
-
-### Planned Attributes (Not Yet Implemented)
-
-| Attribute | Type | Description | Business Use |
-|-----------|------|-------------|--------------|
-| `last_payment_card_brand` | Text (10 chars) | Card brand (visa, mc, amex, etc.) | Payment analytics |
-| `is_account_deleted` | Boolean | Account deletion status | Data privacy compliance |
 
 ## 🎯 Key Attribute Categories
 
@@ -57,6 +61,8 @@ The following table lists all user attributes available in our system:
 - **External ID**: Links to external systems (currently not supported)
 - **Registration Date**: When the customer first joined our platform
 - **App Language**: User's preferred language (coming soon)
+- **Personal Information**: First name, last name, phone number
+- **Account Status**: Email verification and account deletion tracking
 
 ### Loyalty Program
 - **Point Balance**: Last known current balance (not real-time)
@@ -73,6 +79,14 @@ The following table lists all user attributes available in our system:
 - **Product Categories**: What they buy
 - **Store Preferences**: Where they shop
 - **Payment Methods**: How they pay (needs upgrade to know card brand)
+
+### Recent Activity Analytics
+- **30-Day Orders**: Recent engagement tracking
+- **90-Day Orders**: Medium-term engagement analysis
+- **Average Order Value**: 90-day spending patterns
+- **Items Per Order**: 90-day purchase behavior
+- **Top Categories**: Product mix analysis (90-day)
+- **Top Items**: Product preference analysis (90-day)
 
 ### User Experience
 - **App Language**: Localization preferences (coming soon)
