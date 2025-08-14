@@ -94,7 +94,7 @@ The following table lists all user attributes available in our system:
 ## 🔄 Data Updates
 
 Our system automatically updates these attributes:
-- **Daily**: All attributes (order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation)
+- **Hourly**: All attributes (order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation)
 
 ## 📞 Support & Questions
 
