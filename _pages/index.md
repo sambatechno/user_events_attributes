@@ -31,10 +31,10 @@ The following table lists all user attributes available in our system:
 | `point_order_redeemed` | Number | Points used for orders (lifetime) | Redemption tracking |
 | `first_order_at` | Date & Time | User's first purchase | Customer acquisition |
 | `last_order_at` | Date & Time | Most recent purchase | Customer engagement |
-| `total_spend` | Decimal | Total amount spent | Revenue analysis |
-| `total_purchase` | Number | Total number of purchases | Purchase frequency |
-| `category_purchased` | Text (200 chars) | Product categories bought | Product preferences |
-| `product_purchased` | Text (200 chars) | Specific products bought | Product preferences |
+| `total_spend` | Decimal | Total amount spent (lifetime) | Revenue analysis |
+| `total_purchase` | Number | Total number of purchases (lifetime) | Purchase frequency |
+| `category_purchased` | Text (200 chars) | Product categories bought (90d - please use `pmix_top_categories_90d`) | Product preferences |
+| `product_purchased` | Text (200 chars) | Specific products bought (90d - please use `top_items_90d`) | Product preferences |
 | `last_store_code` | Text (200 chars) | Store of last purchase | Store performance |
 | `most_store_code` | Text (200 chars) | Most visited store | Store preferences |
 | `last_payment_method` | Text (200 chars) | Payment method used | Payment preferences |
@@ -42,7 +42,7 @@ The following table lists all user attributes available in our system:
 | `tier_end_date` | Date | Last known tier membership end | Loyalty program management |
 | `first_name` / `firstname` | Text (100 chars) | Customer's first name | Personal identification |
 | `last_name` / `lastname` | Text (100 chars) | Customer's last name | Personal identification |
-| `phone_number` | Text (20 chars) | Customer's mobile number | Contact information |
+| `phone_number` / `mobile` | Text (20 chars) | Customer's mobile number | Contact information |
 | `email_verified_at` | Date & Time | When user email was verified | Account verification status |
 | `customer_deleted_at` | Date & Time | When user account was deleted | Data privacy compliance |
 | `orders_count_30d` | Integer | Number of orders in last 30 days | Recent engagement tracking |
