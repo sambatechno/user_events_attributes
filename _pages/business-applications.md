@@ -21,7 +21,7 @@ Use these attributes to segment customers by:
 - **Churned Customers**: Long periods without orders
 
 ### Loyalty-Based Segmentation
-- **Premium Tier**: High `tier_name` levels
+- **Premium Tier**: High `tier_name` levels (e.g. Gold, Silver)
 - **Standard Tier**: Regular loyalty members
 - **New Members**: Recent `registration_at` dates
 
@@ -89,7 +89,6 @@ Understand customer needs via:
 ### Payment Methods
 - **Transaction Preferences**: `last_payment_method` analysis
 - **Payment Trends**: Payment method adoption patterns
-- **Card Brand Preferences**: Future `last_payment_card_brand` analysis
 
 ## 📊 Reporting & Analytics
 
@@ -108,44 +107,22 @@ Understand customer needs via:
 
 ## 🔄 Data Update Frequency
 
-Our system automatically updates all user attributes daily at 2:00 AM:
+Our system automatically updates all user attributes daily:
 
-### **Loyalty Program Attributes**
-- **Point Balance**: Current available loyalty points
-- **Points Earned**: Lifetime points accumulated  
-- **Points Redeemed**: Voucher and order redemptions
-- **Loyalty Tier**: Current membership level
-- **Tier Expiration**: Tier expiration dates
-
-### **Order Processing Attributes**
-- **First Order**: Customer acquisition tracking
-- **Last Order**: Most recent purchase updates
-- **Total Spend**: Lifetime value calculations
-- **Total Purchase**: Purchase frequency updates
-- **Category Purchased**: Product category preferences
-- **Product Purchased**: Specific product preferences
-- **Last Store Code**: Store of last purchase
-- **Most Store Code**: Most visited store analysis
-- **Last Payment Method**: Payment method preferences
-
-### **Registration Attributes**
-- **Registration Date**: New user onboarding
-- **Internal ID**: User identification setup
-- **External ID**: Third-party system integration
-- **App Language**: Localization preferences
-
-### **Marketing Integration**
-- **Campaign Data**: Marketing platform synchronization
-- **Customer Segmentation**: Updated segment data
-- **Campaign Performance**: Marketing analytics updates
+### **Daily Updates Include**
+- **All User Attributes**: Updated daily for consistency
+- **Loyalty Program Data**: Point balances, tier information, and redemption data
+- **Order Information**: Purchase history, spending patterns, and store preferences
+- **Customer Data**: Registration information and account details
+- **Marketing Integration**: Synchronized data for campaign automation
 
 ### **Business Impact Timeline**
-- **Daily refresh**: All user attributes updated at 2:00 AM
+- **Daily refresh**: All user attributes updated daily
 - **Marketing campaigns**: Daily refreshed data for targeting
 - **Business decisions**: Data available daily for analysis
 - **External systems**: Synchronized daily for consistency
 
 ---
 
-**Last Updated**: August 12, 2025  
+**Last Updated**: 14 Aug 2025  
 **Data Source**: CATA Customer Data Platform

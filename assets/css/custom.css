@@ -1,4 +1,4 @@
-/* CATA User Attributes Documentation - Custom Styles */
+/* CATA User Attributes Documentation - Simple Clean Styles */
 
 /* Custom header styling */
 .page-header {
@@ -25,11 +25,6 @@
     width: 100%;
     margin: 1rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    list-style: none;
-}
-
-.main-content table * {
-    list-style: none !important;
 }
 
 .main-content table th {
@@ -54,111 +49,6 @@
     background-color: #f1f3f4;
 }
 
-/* Ensure no checkbox-like elements in tables */
-.main-content table input[type="checkbox"],
-.main-content table input[type="radio"] {
-    display: none !important;
-}
-
-.main-content table::before,
-.main-content table::after {
-    content: none !important;
-}
-
-/* Remove any list-style elements in table cells */
-.main-content table td,
-.main-content table th {
-    list-style: none !important;
-}
-
-.main-content table td::before,
-.main-content table td::after,
-.main-content table th::before,
-.main-content table th::after {
-    content: none !important;
-}
-
-/* Remove any pseudo-elements that might look like checkboxes */
-.main-content table *::before,
-.main-content table *::after {
-    content: none !important;
-}
-
-/* Ensure no background images that might look like checkboxes */
-.main-content table td,
-.main-content table th {
-    background-image: none !important;
-}
-
-/* Additional rules to remove any checkbox-like elements */
-.main-content table {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-}
-
-.main-content table td,
-.main-content table th {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
-}
-
-/* Remove any default browser styling that might create checkboxes */
-.main-content table input,
-.main-content table select,
-.main-content table textarea {
-    display: none !important;
-}
-
-/* Ensure no list markers or bullets */
-.main-content table ul,
-.main-content table ol {
-    list-style: none !important;
-    list-style-type: none !important;
-}
-
-.main-content table li {
-    list-style: none !important;
-    list-style-type: none !important;
-}
-
-/* Remove any potential checkbox characters or symbols */
-.main-content table td:empty::before,
-.main-content table th:empty::before {
-    content: none !important;
-}
-
-/* Force remove any checkbox-like styling */
-.main-content table * {
-    -webkit-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;
-}
-
-/* Remove any checkbox Unicode characters */
-.main-content table td:contains("☐"),
-.main-content table td:contains("☑"),
-.main-content table td:contains("☒"),
-.main-content table td:contains("✓"),
-.main-content table td:contains("✔"),
-.main-content table td:contains("✗"),
-.main-content table td:contains("✘") {
-    content: "" !important;
-}
-
-/* Additional specificity for table content */
-.main-content table td,
-.main-content table th {
-    position: relative !important;
-}
-
-.main-content table td::marker,
-.main-content table th::marker {
-    content: none !important;
-}
-
 /* Code block styling */
 .main-content code {
     background-color: #f6f8fa;
@@ -179,111 +69,23 @@
     border-radius: 0 4px 4px 0;
 }
 
-/* Navigation enhancement */
-.main-content .navigation {
-    background: #f6f8fa;
-    border: 1px solid #e1e4e8;
-    border-radius: 6px;
-    padding: 1rem;
-    margin: 2rem 0;
-}
-
-.navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.navigation li {
-    margin: 0;
-}
-
-.navigation a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #667eea;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-}
-
-.navigation a:hover {
-    background: #5a6fd8;
-}
-
-/* Alert boxes */
-.alert {
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 4px;
-    border-left: 4px solid;
-}
-
-.alert-info {
-    background-color: #e3f2fd;
-    border-color: #2196f3;
-    color: #0d47a1;
-}
-
-.alert-warning {
-    background-color: #fff3e0;
-    border-color: #ff9800;
-    color: #e65100;
-}
-
-.alert-success {
-    background-color: #e8f5e8;
-    border-color: #4caf50;
-    color: #1b5e20;
-}
-
-/* Category cards */
-.category-card {
-    background: white;
-    border: 1px solid #e1e4e8;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.category-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.category-card h3 {
-    color: #667eea;
-    margin-top: 0;
-    border-bottom: 2px solid #667eea;
-    padding-bottom: 0.5rem;
-}
-
 /* Responsive design improvements */
 @media (max-width: 768px) {
-    .page-header h1 {
+    .page-header .project-name {
         font-size: 2rem;
     }
     
-    .page-header p {
+    .page-header .project-tagline {
         font-size: 1rem;
     }
     
-    table {
+    .main-content table {
         font-size: 0.9rem;
     }
     
-    th, td {
+    .main-content table th,
+    .main-content table td {
         padding: 8px;
-    }
-    
-    .navigation ul {
-        flex-direction: column;
     }
 }
 
@@ -294,11 +96,7 @@
         color: black !important;
     }
     
-    .navigation {
-        display: none;
-    }
-    
-    table {
+    .main-content table {
         box-shadow: none;
         border: 1px solid #ccc;
     }

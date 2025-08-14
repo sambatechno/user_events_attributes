@@ -15,14 +15,14 @@ The following table lists all user attributes available in our system:
 | Attribute | Type | Description | Business Use |
 |-----------|------|-------------|--------------|
 | `id` | Auto-increment | Unique system identifier | Internal tracking |
-| `internal_id` | Text (50 chars) | Unique internal user ID | User identification |
-| `external_id` | Text (50 chars) | External system user ID | Third-party integration |
+| `internal_id` | Text (50 chars) | App customer unique ID | User identification |
+| `external_id` | Text (50 chars) | External system user ID (currently not supported) | Third-party integration |
 | `registration_at` | Date & Time | When user registered | User lifecycle analysis |
-| `app_language` | Text (10 chars) | User's preferred language | Localization & UX |
-| `point_balance` | Number | Current loyalty points | Loyalty program management |
-| `point_earned` | Number | Total points earned | Loyalty program analytics |
-| `point_voucher_redeemed` | Number | Points used for vouchers | Redemption tracking |
-| `point_order_redeemed` | Number | Points used for orders | Redemption tracking |
+| `app_language` | Text (10 chars) | User's preferred language (coming soon) | Localization & UX |
+| `point_balance` | Number | Last current balance known (not real time) | Loyalty program management |
+| `point_earned` | Number | Total points earned (lifetime) | Loyalty program analytics |
+| `point_voucher_redeemed` | Number | Points used for vouchers (lifetime) | Redemption tracking |
+| `point_order_redeemed` | Number | Points used for orders (lifetime) | Redemption tracking |
 | `first_order_at` | Date & Time | User's first purchase | Customer acquisition |
 | `last_order_at` | Date & Time | Most recent purchase | Customer engagement |
 | `total_spend` | Decimal | Total amount spent | Revenue analysis |
@@ -32,8 +32,8 @@ The following table lists all user attributes available in our system:
 | `last_store_code` | Text (200 chars) | Store of last purchase | Store performance |
 | `most_store_code` | Text (200 chars) | Most visited store | Store preferences |
 | `last_payment_method` | Text (200 chars) | Payment method used | Payment preferences |
-| `tier_name` | Text (30 chars) | Current loyalty tier | Loyalty program status |
-| `tier_end_date` | Date | Tier expiration date | Loyalty program management |
+| `tier_name` | Text (30 chars) | Last known tier name (e.g. Bronze, Silver, Gold) | Loyalty program status |
+| `tier_end_date` | Date | Last known tier membership end | Loyalty program management |
 | `created_at` | Timestamp | Record creation time | Data tracking |
 | `updated_at` | Timestamp | Last update time | Data freshness |
 
@@ -47,16 +47,17 @@ The following table lists all user attributes available in our system:
 ## 🎯 Key Attribute Categories
 
 ### Customer Identification
-- **Internal ID**: Our system's unique identifier for each user
-- **External ID**: Links to external systems and third-party platforms
+- **Internal ID**: App customer unique identifier
+- **External ID**: Links to external systems (currently not supported)
 - **Registration Date**: When the customer first joined our platform
+- **App Language**: User's preferred language (coming soon)
 
 ### Loyalty Program
-- **Point Balance**: Current available loyalty points
+- **Point Balance**: Last known current balance (not real-time)
 - **Points Earned**: Lifetime points accumulated
-- **Points Redeemed**: How customers use their points
-- **Loyalty Tier**: Current membership level
-- **Tier Expiration**: When the current tier expires
+- **Points Redeemed**: Lifetime points used for vouchers and orders
+- **Loyalty Tier**: Last known tier name (e.g. Bronze, Silver, Gold)
+- **Tier Expiration**: Last known tier membership end date
 
 ### Purchase Behavior
 - **First Order**: Customer acquisition date
@@ -65,47 +66,17 @@ The following table lists all user attributes available in our system:
 - **Purchase Count**: Engagement frequency
 - **Product Categories**: What they buy
 - **Store Preferences**: Where they shop
-- **Payment Methods**: How they pay
-- **Payment Card Brands**: Card type preferences (visa, mc, amex, etc.)
+- **Payment Methods**: How they pay (needs upgrade to know card brand)
 
 ### User Experience
-- **App Language**: Localization preferences
-- **Store Locations**: Shopping patterns
+- **App Language**: Localization preferences (coming soon)
 
 ## 🔄 Data Updates
 
-Our system automatically updates these attributes daily at 2:00 AM:
-
-### **Loyalty Program Attributes**
-- **Point Balance**: Current available loyalty points
-- **Points Earned**: Lifetime points accumulated  
-- **Points Redeemed**: Voucher and order redemptions
-- **Loyalty Tier**: Current membership level
-- **Tier Expiration**: Tier expiration dates
-
-### **Order Processing Attributes**
-- **First Order**: Customer acquisition tracking
-- **Last Order**: Most recent purchase updates
-- **Total Spend**: Lifetime value calculations
-- **Total Purchase**: Purchase frequency updates
-- **Category Purchased**: Product category preferences
-- **Product Purchased**: Specific product preferences
-- **Last Store Code**: Store of last purchase
-- **Most Store Code**: Most visited store analysis
-- **Last Payment Method**: Payment method preferences
-
-### **Registration Attributes**
-- **Registration Date**: New user onboarding
-- **Internal ID**: User identification setup
-- **External ID**: Third-party system integration
-- **App Language**: Localization preferences
-
-### **Marketing Integration**
-- **Campaign Data**: Marketing platform synchronization
-- **Customer Segmentation**: Updated segment data
-- **Campaign Performance**: Marketing analytics updates
+Our system automatically updates these attributes:
+- **Daily**: All attributes (order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation)
 
 ---
 
-**Last Updated**: August 12, 2025  
+**Last Updated**: 14 Aug 2025  
 **Data Source**: CATA Customer Data Platform
