@@ -36,7 +36,9 @@ The following table lists all user attributes available in our system:
 | `category_purchased` | Text (200 chars) | Product categories bought (90d - please use `pmix_top_categories_90d`) | Product preferences |
 | `product_purchased` | Text (200 chars) | Specific products bought (90d - please use `top_items_90d`) | Product preferences |
 | `last_store_code` | Text (200 chars) | Store of last purchase | Store performance |
+| `last_store_name` | Text (200 chars) | Name of store of last purchase | Store performance |
 | `most_store_code` | Text (200 chars) | Most visited store | Store preferences |
+| `most_store_name` | Text (200 chars) | Name of most visited store | Store preferences |
 | `last_payment_method` | Text (200 chars) | Payment method used | Payment preferences |
 | `tier_name` | Text (30 chars) | Last known tier name (e.g. Bronze, Silver, Gold) | Loyalty program status |
 | `tier_end_date` | Date | Last known tier membership end | Loyalty program management |
@@ -105,5 +107,5 @@ For questions about user attributes or data access:
 
 ---
 
-**Last Updated**: 14 Aug 2025  
+**Last Updated**: 18 Aug 2025  
 **Data Source**: CATA Customer Data Platform

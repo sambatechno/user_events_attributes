@@ -27,7 +27,7 @@ Use these attributes to segment customers by:
 
 ### Preference-Based Segmentation
 - **Product Categories**: Based on `category_purchased`
-- **Store Preferences**: Based on `most_store_code`
+- **Store Preferences**: Based on `most_store_code` and `most_store_name`
 - **Payment Methods**: Based on `last_payment_method`
 
 ## 🎯 Marketing Campaigns
@@ -45,7 +45,7 @@ Target customers based on:
 - **Tier Expiration Alerts**: Target based on `tier_end_date`
 
 ### Geographic Targeting
-- **Store-Based Campaigns**: Target based on `last_store_code` and `most_store_code`
+- **Store-Based Campaigns**: Target based on `last_store_code`, `last_store_name`, `most_store_code`, and `most_store_name`
 - **Regional Promotions**: Location-specific marketing
 
 ### Behavioral Targeting
@@ -82,7 +82,7 @@ Understand customer needs via:
 - **Purchase Patterns**: `total_purchase` frequency analysis
 
 ### Store Patterns
-- **Store Performance**: Analysis of `last_store_code` and `most_store_code`
+- **Store Performance**: Analysis of `last_store_code`, `last_store_name`, `most_store_code`, and `most_store_name`
 - **Geographic Distribution**: Store location preferences
 - **Store-Specific Behavior**: Store-based customer behavior
 
@@ -124,5 +124,5 @@ Our system automatically updates all user attributes daily:
 
 ---
 
-**Last Updated**: 14 Aug 2025  
+**Last Updated**: 18 Aug 2025  
 **Data Source**: CATA Customer Data Platform

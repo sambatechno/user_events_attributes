@@ -116,5 +116,5 @@ permalink: /data-privacy.html
 
 ---
 
-**Last Updated**: 14 Aug 2025  
+**Last Updated**: 18 Aug 2025  
 **Data Source**: CATA Customer Data Platform
