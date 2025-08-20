@@ -53,6 +53,9 @@ The following table lists all user attributes available in our system:
 | `avg_items_per_order_90d` | Decimal | Average items per order in last 90 days | Purchase behavior analysis |
 | `pmix_top_categories_90d` | Text | Top categories in last 90 days | Product mix analysis |
 | `top_items_90d` | Text | Top most ordered items in last 90 days | Product preference analysis |
+| `top_spender_ltv` | Integer | Customer's spending rank (1-50) in lifetime value ranking, -1 if not ranked | Customer value analysis |
+| `top_spender_last30d` | Integer | Customer's spending rank (1-50) in last 30 days ranking, -1 if not ranked | Recent value analysis |
+| `top_spender_last90d` | Integer | Customer's spending rank (1-50) in last 90 days ranking, -1 if not ranked | Medium-term value analysis |
 | `created_at` | Timestamp | Record creation time | Data tracking |
 | `updated_at` | Timestamp | Last update time | Data freshness |
 
@@ -89,6 +92,7 @@ The following table lists all user attributes available in our system:
 - **Items Per Order**: 90-day purchase behavior
 - **Top Categories**: Product mix analysis (90-day)
 - **Top Items**: Product preference analysis (90-day)
+- **Spending Rankings**: Customer rank in spending (lifetime, 30-day, 90-day)
 
 ### User Experience
 - **App Language**: Localization preferences (coming soon)
@@ -107,5 +111,5 @@ For questions about user attributes or data access:
 
 ---
 
-**Last Updated**: 18 Aug 2025  
+**Last Updated**: 20 Aug 2025  
 **Data Source**: CATA Customer Data Platform

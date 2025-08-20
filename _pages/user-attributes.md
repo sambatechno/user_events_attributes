@@ -46,5 +46,5 @@ For the complete list of all user attributes with detailed descriptions, types, 
 
 ---
 
-**Last Updated**: 18 Aug 2025  
+**Last Updated**: 20 Aug 2025  
 **Data Source**: CATA Customer Data Platform

@@ -14,6 +14,7 @@ Use these attributes to segment customers by:
 - **High Spenders**: Customers with high `total_spend` values
 - **Medium Spenders**: Customers with moderate spending patterns
 - **Low Spenders**: Customers with minimal spending history
+- **Top Ranked Spenders**: Customers ranked 1-50 in `top_spender_ltv`, `top_spender_last30d`, or `top_spender_last90d`
 
 ### Engagement-Based Segmentation
 - **Active Customers**: Recent `last_order_at` dates
@@ -38,6 +39,7 @@ Target customers based on:
 - **Recent Buyers**: High-value customers with recent `last_order_at`
 - **High-Value Customers**: Customers with high `total_spend`
 - **Frequent Buyers**: Customers with high `total_purchase` counts
+- **Top Ranked Customers**: Customers in top 50 spending rankings across different time periods
 
 ### Loyalty Status
 - **Tier-Specific Promotions**: Target based on `tier_name`
@@ -98,6 +100,7 @@ Understand customer needs via:
 - **Store Performance Comparison**: Based on store code attributes
 - **Product Category Trends**: Based on `category_purchased`
 - **Customer Acquisition and Retention**: Based on `registration_at` and `last_order_at`
+- **Top Spender Rankings**: Analysis of customer spending rankings across different time periods
 
 ### Custom Analytics
 - **Segment-Specific Insights**: Targeted analysis for specific customer groups
@@ -124,5 +127,5 @@ Our system automatically updates all user attributes daily:
 
 ---
 
-**Last Updated**: 18 Aug 2025  
+**Last Updated**: 20 Aug 2025  
 **Data Source**: CATA Customer Data Platform

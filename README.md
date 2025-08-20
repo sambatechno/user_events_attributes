@@ -15,4 +15,4 @@ For detailed information about user attributes, business applications, data priv
 ---
 
 **Repository**: CATA User Attributes Documentation  
-**Last Updated**: 18 Aug 2025
+**Last Updated**: 20 Aug 2025
