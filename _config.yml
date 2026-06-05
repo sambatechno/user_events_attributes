@@ -25,6 +25,8 @@ nav:
     url: /
   - title: User Attributes
     url: /user-attributes.html
+  - title: Netcore Export Attributes
+    url: /netcore-attributes.html
   - title: Business Applications
     url: /business-applications.html
   - title: Data Privacy

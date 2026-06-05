@@ -6,7 +6,7 @@ permalink: /user-attributes.html
 
 # User Attributes Reference
 
-This page provides a detailed reference for user attributes. For the complete and up-to-date list of all user attributes, please refer to the [main documentation](index.html).
+This page provides a detailed reference for user attributes. For the complete and up-to-date list of all user attributes, please refer to the [main documentation](index.html). For the authoritative list of every field pushed to Netcore by the daily sync, see [Netcore Export Attributes](netcore-attributes.html).
 
 ## 📊 Attribute Categories Overview
 
@@ -30,7 +30,7 @@ This page provides a detailed reference for user attributes. For the complete an
 - **Purchase Count**: Engagement frequency
 - **Product Categories**: What they buy
 - **Store Preferences**: Where they shop
-- **Payment Methods**: How they pay (needs upgrade to know card brand)
+- **Payment Methods**: How they pay, including the card brand (`last_payment_card_brand`)
 
 ### User Experience
 - **App Language**: Localization preferences (coming soon)
@@ -38,7 +38,7 @@ This page provides a detailed reference for user attributes. For the complete an
 ## 🔄 Data Updates
 
 Our system automatically updates these attributes:
-- **Daily**: All attributes (order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation)
+- **Daily**: All attributes are pushed to Netcore once per day at 05:00 (Asia/Singapore) — order information, loyalty tier calculations, point balance updates, purchase pattern analysis, and customer segmentation.
 
 ## 📖 Complete Documentation
 
@@ -46,5 +46,5 @@ For the complete list of all user attributes with detailed descriptions, types, 
 
 ---
 
-**Last Updated**: 20 Aug 2025  
+**Last Updated**: 5 Jun 2026  
 **Data Source**: CATA Customer Data Platform
